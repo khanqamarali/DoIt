@@ -12,6 +12,7 @@
 		B30112BF1ED90428008B0504 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B30112BD1ED90428008B0504 /* Main.storyboard */; };
 		B30112C11ED90428008B0504 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B30112C01ED90428008B0504 /* Assets.xcassets */; };
 		B30112C41ED90428008B0504 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B30112C21ED90428008B0504 /* LaunchScreen.storyboard */; };
+		B3C599311EDA316400CE665D /* task.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C599301EDA316400CE665D /* task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		B30112C01ED90428008B0504 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B30112C31ED90428008B0504 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B30112C51ED90428008B0504 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3C599301EDA316400CE665D /* task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 		B30112AD1ED90428008B0504 = {
 			isa = PBXGroup;
 			children = (
+				B3C599301EDA316400CE665D /* task.swift */,
 				B30112B81ED90428008B0504 /* todoapp */,
 				B30112B71ED90428008B0504 /* Products */,
 			);
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B30112BC1ED90428008B0504 /* ViewController.swift in Sources */,
+				B3C599311EDA316400CE665D /* task.swift in Sources */,
 				B30112BA1ED90428008B0504 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +305,7 @@
 				B30112CA1ED90428008B0504 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
