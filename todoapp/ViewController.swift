@@ -64,6 +64,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         return [task,task1,task2,task3]
     }
 
+    @IBAction func plusTabs(_ sender: Any) {
+        performSegue(withIdentifier: "addSegue", sender: nil)
+    }
 
 }
 
