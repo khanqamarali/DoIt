@@ -62,12 +62,56 @@
                     <view key="view" contentMode="scaleToFill" id="628-er-WOS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pmp-hj-jnE">
+                                <rect key="frame" x="160.5" y="79" width="54.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qut-up-ng6">
+                                <rect key="frame" x="56" y="110" width="263" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Important:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTm-xA-47A">
+                                <rect key="frame" x="147.5" y="160" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AaZ-M8-wmA">
+                                <rect key="frame" x="163" y="201" width="51" height="31"/>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffQ-qC-tiL">
+                                <rect key="frame" x="172.5" y="252" width="30" height="30"/>
+                                <state key="normal" title="Add"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AaZ-M8-wmA" firstAttribute="centerX" secondItem="628-er-WOS" secondAttribute="centerX" id="05n-hw-0b2"/>
+                            <constraint firstItem="Qut-up-ng6" firstAttribute="leading" secondItem="628-er-WOS" secondAttribute="leadingMargin" constant="20" id="Cld-7d-QqB"/>
+                            <constraint firstItem="Qut-up-ng6" firstAttribute="top" secondItem="pmp-hj-jnE" secondAttribute="bottom" constant="20" id="DpY-6t-nqQ"/>
+                            <constraint firstItem="Qut-up-ng6" firstAttribute="top" secondItem="pmp-hj-jnE" secondAttribute="bottom" constant="10" id="LMS-1d-GTa"/>
+                            <constraint firstItem="Qut-up-ng6" firstAttribute="centerX" secondItem="628-er-WOS" secondAttribute="centerX" id="MjT-bw-bfs"/>
+                            <constraint firstItem="tTm-xA-47A" firstAttribute="centerX" secondItem="628-er-WOS" secondAttribute="centerX" id="NXs-iU-cgw"/>
+                            <constraint firstItem="ffQ-qC-tiL" firstAttribute="top" secondItem="AaZ-M8-wmA" secondAttribute="bottom" constant="20" id="Nhj-9G-rLK"/>
+                            <constraint firstItem="ffQ-qC-tiL" firstAttribute="centerX" secondItem="628-er-WOS" secondAttribute="centerX" id="XRV-Xx-bZB"/>
+                            <constraint firstItem="tTm-xA-47A" firstAttribute="top" secondItem="Qut-up-ng6" secondAttribute="bottom" constant="20" id="cem-go-WYH"/>
+                            <constraint firstItem="pmp-hj-jnE" firstAttribute="centerX" secondItem="628-er-WOS" secondAttribute="centerX" id="gHN-9U-T7F"/>
+                            <constraint firstItem="Qut-up-ng6" firstAttribute="leading" secondItem="628-er-WOS" secondAttribute="leadingMargin" constant="40" id="ldW-iP-6bf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qut-up-ng6" secondAttribute="trailing" constant="20" id="lyE-1N-0qF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qut-up-ng6" secondAttribute="trailing" constant="40" id="obV-f1-304"/>
+                            <constraint firstItem="pmp-hj-jnE" firstAttribute="top" secondItem="ha0-rk-s4z" secondAttribute="bottom" constant="15" id="ytD-DB-N7d"/>
+                            <constraint firstItem="AaZ-M8-wmA" firstAttribute="top" secondItem="tTm-xA-47A" secondAttribute="bottom" constant="20" id="yvs-VR-O4S"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DCK-bt-oOJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2364" y="-543"/>
+            <point key="canvasLocation" x="2364" y="-543.77811094452773"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rjM-Y1-zfK">
