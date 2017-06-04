@@ -49,12 +49,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1608.8" y="-550.07496251874068"/>
+            <point key="canvasLocation" x="1139" y="-547"/>
         </scene>
-        <!--View Controller-->
+        <!--Create Task View Controller-->
         <scene sceneID="YNX-uQ-ukw">
             <objects>
-                <viewController id="nWw-en-afY" sceneMemberID="viewController">
+                <viewController id="nWw-en-afY" customClass="CreateTaskViewController" customModule="todoapp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ha0-rk-s4z"/>
                         <viewControllerLayoutGuide type="bottom" id="kKc-4q-GN5"/>
@@ -87,6 +87,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffQ-qC-tiL">
                                 <rect key="frame" x="172.5" y="252" width="30" height="30"/>
                                 <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addTapped:" destination="nWw-en-afY" eventType="touchUpInside" id="eVu-Xb-uqq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -108,10 +111,14 @@
                             <constraint firstItem="AaZ-M8-wmA" firstAttribute="top" secondItem="tTm-xA-47A" secondAttribute="bottom" constant="20" id="yvs-VR-O4S"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="importantSwtichField" destination="AaZ-M8-wmA" id="68X-8X-URg"/>
+                        <outlet property="taskNameTextField" destination="Qut-up-ng6" id="LXX-it-e7E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DCK-bt-oOJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2364" y="-543.77811094452773"/>
+            <point key="canvasLocation" x="1668" y="-542"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rjM-Y1-zfK">

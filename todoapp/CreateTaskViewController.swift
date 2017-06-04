@@ -2,7 +2,7 @@
 //  CreateTaskViewController.swift
 //  todoapp
 //
-//  Created by qamarali on 5/28/17.
+//  Created by qamarali on 6/3/17.
 //  Copyright © 2017 qamarali. All rights reserved.
 //
 
@@ -11,16 +11,17 @@ import UIKit
 class CreateTaskViewController: UIViewController {
 
     @IBOutlet weak var taskNameTextField: UITextField!
-   
-    @IBOutlet weak var ImporantantSwitch: UISwitch!
-   
+    
+    @IBOutlet weak var importantSwtichField: UISwitch!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         // Do any additional setup after loading the view.
     }
-    
-    @IBAction func AddToDo(_ sender: Any) {
-        	
+
+
+    @IBAction func addTapped(_ sender: Any) {
     }
+   
 }

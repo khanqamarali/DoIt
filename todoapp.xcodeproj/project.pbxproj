@@ -12,6 +12,7 @@
 		B30112BF1ED90428008B0504 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B30112BD1ED90428008B0504 /* Main.storyboard */; };
 		B30112C11ED90428008B0504 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B30112C01ED90428008B0504 /* Assets.xcassets */; };
 		B30112C41ED90428008B0504 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B30112C21ED90428008B0504 /* LaunchScreen.storyboard */; };
+		B30DDCC01EE3865C002497A2 /* CreateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30DDCBF1EE3865C002497A2 /* CreateTaskViewController.swift */; };
 		B3C599311EDA316400CE665D /* task.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C599301EDA316400CE665D /* task.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		B30112C01ED90428008B0504 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B30112C31ED90428008B0504 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B30112C51ED90428008B0504 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B30DDCBF1EE3865C002497A2 /* CreateTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTaskViewController.swift; sourceTree = "<group>"; };
 		B3C599301EDA316400CE665D /* task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,6 +62,7 @@
 				B30112B91ED90428008B0504 /* AppDelegate.swift */,
 				B30112BB1ED90428008B0504 /* ViewController.swift */,
 				B30112BD1ED90428008B0504 /* Main.storyboard */,
+				B30DDCBF1EE3865C002497A2 /* CreateTaskViewController.swift */,
 				B30112C01ED90428008B0504 /* Assets.xcassets */,
 				B30112C21ED90428008B0504 /* LaunchScreen.storyboard */,
 				B30112C51ED90428008B0504 /* Info.plist */,
@@ -142,6 +145,7 @@
 				B30112BC1ED90428008B0504 /* ViewController.swift in Sources */,
 				B3C599311EDA316400CE665D /* task.swift in Sources */,
 				B30112BA1ED90428008B0504 /* AppDelegate.swift in Sources */,
+				B30DDCC01EE3865C002497A2 /* CreateTaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
