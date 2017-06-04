@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
+class TaskViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
 
 
     @IBOutlet weak var tableView: UITableView!
@@ -66,6 +66,14 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
 
     @IBAction func plusTabs(_ sender: Any) {
         performSegue(withIdentifier: "addSegue", sender: nil)
+    }
+    
+   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    
+        let nextVC = segue.destination as!
+            CreateTaskViewController
+        nextVC.previousVC = self
+    
     }
 
 }
