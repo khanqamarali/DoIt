@@ -63,18 +63,27 @@ class TaskViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         
         return [task,task1,task2,task3]
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+    }
 
     @IBAction func plusTabs(_ sender: Any) {
         performSegue(withIdentifier: "addSegue", sender: nil)
     }
     
    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    
+    if segue.identifier == "addSegue" {
         let nextVC = segue.destination as!
-            CreateTaskViewController
+        CreateTaskViewController
         nextVC.previousVC = self
     
     }
+    
+  
+    
+    }
+    
 
 }
 
