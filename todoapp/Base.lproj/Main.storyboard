@@ -70,21 +70,34 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkN-Yw-JZ6">
-                                <rect key="frame" x="83" y="115" width="208" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZC-Dq-PmA">
+                                <rect key="frame" x="26" y="84" width="323" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BxN-gc-Bxt">
+                                <rect key="frame" x="163.5" y="141.5" width="48" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="Done_Click:" destination="I6R-J3-qe2" eventType="touchUpInside" id="LBj-6i-knx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="vkN-Yw-JZ6" firstAttribute="centerX" secondItem="AUb-S7-oSl" secondAttribute="centerX" id="dg2-VH-9Rl"/>
+                            <constraint firstItem="kZC-Dq-PmA" firstAttribute="top" secondItem="iSm-Ah-P3m" secondAttribute="bottom" constant="20" id="AVW-CR-YCl"/>
+                            <constraint firstItem="BxN-gc-Bxt" firstAttribute="centerX" secondItem="AUb-S7-oSl" secondAttribute="centerX" id="GOF-3l-24g"/>
+                            <constraint firstItem="kZC-Dq-PmA" firstAttribute="centerX" secondItem="AUb-S7-oSl" secondAttribute="centerX" id="MfV-76-o7c"/>
+                            <constraint firstItem="kZC-Dq-PmA" firstAttribute="leading" secondItem="AUb-S7-oSl" secondAttribute="leadingMargin" constant="10" id="V3X-iA-8Or"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kZC-Dq-PmA" secondAttribute="trailing" constant="10" id="jg7-3k-6I5"/>
                             <constraint firstItem="gic-LC-6JB" firstAttribute="centerX" secondItem="AUb-S7-oSl" secondAttribute="centerX" id="tef-1Y-rhJ"/>
+                            <constraint firstItem="BxN-gc-Bxt" firstAttribute="top" secondItem="kZC-Dq-PmA" secondAttribute="bottom" constant="30" id="za3-hw-Cix"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="getselectedValue" destination="vkN-Yw-JZ6" id="YwE-e5-qd3"/>
+                        <outlet property="Label1" destination="kZC-Dq-PmA" id="5Yz-Hy-yCA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D6z-IZ-BqS" userLabel="First Responder" sceneMemberID="firstResponder"/>

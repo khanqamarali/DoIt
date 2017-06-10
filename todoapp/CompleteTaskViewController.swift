@@ -10,18 +10,32 @@ import UIKit
 
 class CompleteTaskViewController: UIViewController {
 
+  
+    @IBOutlet weak var Label1: UILabel!
     
-    @IBOutlet weak var getselectedValue: UILabel!
-    
+        var previousVC = TaskViewController()
     var task = Task()
     
+    @IBAction func Done_Click(_ sender: Any) {
+        
+    previousVC.tasks.remove(at: previousVC.selectedIndex)
+               previousVC.tableView.reloadData()
+        navigationController!.popViewController(animated: true)
+        
+    }
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        getselectedValue.text = "Yahoo"
+          Label1.text = task.name
         
+        if task.important{
+           Label1.text = "❗️\(task.name)"
+        }
+        else {
+           Label1.text = task.name
+        }
+
     }
 
 
