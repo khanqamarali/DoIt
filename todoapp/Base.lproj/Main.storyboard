@@ -45,17 +45,17 @@
                     <connections>
                         <outlet property="tableView" destination="Bmx-WY-GyK" id="Ngm-uP-IS3"/>
                         <segue destination="nWw-en-afY" kind="show" identifier="addSegue" id="fE8-VZ-3vX"/>
-                        <segue destination="I6R-J3-qe2" kind="show" id="Hzb-5g-RIN"/>
+                        <segue destination="I6R-J3-qe2" kind="show" identifier="selectTaskSegue" id="Hzb-5g-RIN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1290" y="-550"/>
         </scene>
-        <!--Select Task View Control-->
+        <!--Complete Task View Controller-->
         <scene sceneID="YI3-Je-Vdu">
             <objects>
-                <viewController id="I6R-J3-qe2" customClass="SelectTaskViewControl" sceneMemberID="viewController">
+                <viewController id="I6R-J3-qe2" customClass="CompleteTaskViewController" customModule="todoapp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iSm-Ah-P3m"/>
                         <viewControllerLayoutGuide type="bottom" id="YjP-jO-rue"/>
@@ -63,12 +63,33 @@
                     <view key="view" contentMode="scaleToFill" id="AUb-S7-oSl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gic-LC-6JB">
+                                <rect key="frame" x="187" y="72" width="0.0" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkN-Yw-JZ6">
+                                <rect key="frame" x="83" y="115" width="208" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vkN-Yw-JZ6" firstAttribute="centerX" secondItem="AUb-S7-oSl" secondAttribute="centerX" id="dg2-VH-9Rl"/>
+                            <constraint firstItem="gic-LC-6JB" firstAttribute="centerX" secondItem="AUb-S7-oSl" secondAttribute="centerX" id="tef-1Y-rhJ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="getselectedValue" destination="vkN-Yw-JZ6" id="YwE-e5-qd3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D6z-IZ-BqS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1289" y="206"/>
+            <point key="canvasLocation" x="1288.8" y="363.86806596701655"/>
         </scene>
         <!--Create Task View Controller-->
         <scene sceneID="YNX-uQ-ukw">
@@ -137,7 +158,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DCK-bt-oOJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1970" y="-558"/>
+            <point key="canvasLocation" x="2263" y="-550"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rjM-Y1-zfK">

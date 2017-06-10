@@ -33,7 +33,7 @@ class TaskViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         let cell = UITableViewCell()
         let task = tasks[indexPath.row]
         if task.important{
-            cell.textLabel?.text = "!\(task.name)"
+            cell.textLabel?.text = "❗️\(task.name)"
         }
         else {
         cell.textLabel?.text = task.name
@@ -65,25 +65,30 @@ class TaskViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let task = tasks[indexPath.row]
+        performSegue(withIdentifier: "selectTaskSegue", sender: task)
 
     }
 
+
+    
     @IBAction func plusTabs(_ sender: Any) {
         performSegue(withIdentifier: "addSegue", sender: nil)
     }
     
    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    
     if segue.identifier == "addSegue" {
         let nextVC = segue.destination as!
         CreateTaskViewController
         nextVC.previousVC = self
-    
     }
     
-  
-    
+    if segue.identifier == "selectTaskSegue" {
+        let nextVC = segue.destination as!
+        CompleteTaskViewController
+        nextVC.task = sender as! Task
     }
-    
-
+ }
 }
 
