@@ -14,12 +14,13 @@ class CompleteTaskViewController: UIViewController {
     @IBOutlet weak var Label1: UILabel!
     
         var previousVC = TaskViewController()
-    var task = Task()
+    
+    var task : Task? = nil
     
     @IBAction func Done_Click(_ sender: Any) {
         
-    previousVC.tasks.remove(at: previousVC.selectedIndex)
-               previousVC.tableView.reloadData()
+         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        context.delete(task!)
         navigationController!.popViewController(animated: true)
         
     }
@@ -27,13 +28,13 @@ class CompleteTaskViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-          Label1.text = task.name
+          Label1.text = task!.name!
         
-        if task.important{
-           Label1.text = "❗️\(task.name)"
+        if task!.important{
+           Label1.text = "❗️\(task!.name!)"
         }
         else {
-           Label1.text = task.name
+           Label1.text = task!.name!
         }
 
     }
